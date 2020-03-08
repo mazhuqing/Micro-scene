@@ -1,0 +1,677 @@
+/* 自带的基础css开始 */
+
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background: #eee;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.swiper-container {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+/* 自带的基础css结束 */
+
+/* 音乐 */
+#music {
+	/* width:60px;
+	height:60px; */
+	position: fixed;
+	top: 9px;
+	right: -12px;
+	z-index: 9;
+}
+
+#music .musicPic {
+	width: 69%;
+}
+
+@keyframes music {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+#music .musicPic {
+	animation: none;
+}
+
+/* 音乐结束 */
+
+/* 箭头指针 */
+#array {
+	width: 7%;
+	position: absolute;
+	top: 95%;
+	left: 46%;
+	z-index: 9;
+	animation: start 1.5s infinite ease-in-out;
+}
+
+@keyframes start {
+
+	0%,
+	30% {
+		opacity: 0;
+		transform: translate(0, 10px);
+	}
+
+	60% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+
+	100% {
+		opacity: 0;
+		transform: translate(0, -8px);
+	}
+}
+
+/* 箭头指针结束 */
+
+/* 第一屏开始 */
+.swiper-slide.one {
+	background-image: url(../img/1.gif);
+	background-size: 100% 100%;
+}
+
+.swiper-slide.one .main1 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide.one .main1 .onePic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide.one .main1 .oneText1 {
+	color: #efefff;
+	font-size: 8vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 39%;
+	top: 5%;
+}
+
+.swiper-slide.one .main1 .onePic2 {
+	width: 80%;
+	position: absolute;
+	left: 12%;
+	top: 19%;
+}
+
+.swiper-slide.one .main1 .oneText2 {
+	color: #efefff;
+	font-size: 7vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 12%;
+	top: 45%;
+}
+
+.swiper-slide.one .main1 .oneText3 {
+	color: #eae9fa;
+	font-size: 5vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 37%;
+	top: 58%;
+}
+
+.swiper-slide.one .main1 .oneText4 {
+	color: #e9e9f9;
+	font-size: 5vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 30%;
+	top: 68%;
+}
+
+.swiper-slide.one .main1 .oneText5 {
+	color: #efefff;
+	font-size: 5vw;
+	letter-spacing: 4vw;
+	font-weight: bold;
+	position: absolute;
+	left: 7%;
+	top: 88%;
+}
+
+/* 第一屏结束 */
+
+/* 第二屏开始 */
+.swiper-slide.two {
+	background-image: url(../img/1.gif);
+	background-size: 100% 100%;
+}
+
+.swiper-slide.two .main2 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide.two .main2 .twoPic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide.two .main2 .twoPic2 {
+	width: 90%;
+	height: 94%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+}
+
+.swiper-slide.two .main2 .twoText1 {
+	color: #efefff;
+	font-size: 9vw;
+	letter-spacing: 2vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 25%;
+	top: 5%;
+}
+
+.swiper-slide.two .main2 .twoPic3 {
+	width: 90%;
+	height: 14%;
+	position: absolute;
+	left: 5%;
+	top: 12%;
+}
+
+.swiper-slide.two .main2 .twoBox1 {
+	width: 72%;
+	height: 65%;
+	position: absolute;
+	left: 15%;
+	top: 20%;
+}
+
+.swiper-slide.two .main2 .twoText2 {
+	color: #efefff;
+	font: 4.8vw/1.7 "黑体";
+	font-weight: bolder;
+	text-align: left;
+}
+.swiper-slide.two .main2 .twoText3 {
+	width: 50%;
+    height: 15%;
+    color: #efefff;
+    font: 4.8vw/1.7 "黑体";
+    font-weight: bolder;
+    margin-left: 50%;
+}
+/* 第二屏结束 */
+
+/* 第三屏开始 */
+.swiper-slide.three {
+	background-image: url(../img/1.gif);
+	background-size: 100% 100%;
+}
+
+.swiper-slide.three .main3 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide.three .main3 .threePic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide.three .main3 .threePic2 {
+	width: 90%;
+	height: 94%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+}
+
+.swiper-slide.three .main3 .threeText1 {
+	color: #efefff;
+	font-size: 9vw;
+	letter-spacing: 2vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 25%;
+	top: 5%;
+}
+
+.swiper-slide.three .main3 .threePic3 {
+	width: 90%;
+	height: 14%;
+	position: absolute;
+	left: 5%;
+	top: 12%;
+}
+
+.swiper-slide.three .main3 .threeBox1 {
+	width: 72%;
+	height: 65%;
+	position: absolute;
+	left: 15%;
+	top: 20%;
+}
+
+.swiper-slide.three .main3 .threeText2 {
+	color: #efefff;
+	font: 4.8vw/1.7 "黑体";
+	font-weight: bolder;
+	text-align: left;
+}
+
+.swiper-slide.three .main3 .threePic4 {
+	width: 98%;
+	height: 41%;
+	border: 2px solid #fff;
+}
+
+/* 第三屏结束 */
+
+/* 第四屏开始 */
+.swiper-slide.four {
+	background-image: url(../img/1.gif);
+	background-size: 100% 100%;
+}
+
+.swiper-slide.four .main4 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide.four .main4 .fourPic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide.four .main4 .fourPic2 {
+	width: 90%;
+	height: 94%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+}
+
+.swiper-slide.four .main4 .fourText1 {
+	color: #efefff;
+	font-size: 9vw;
+	letter-spacing: 2vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 25%;
+	top: 5%;
+}
+
+.swiper-slide.four .main4 .fourPic3 {
+	width: 90%;
+	height: 14%;
+	position: absolute;
+	left: 5%;
+	top: 12%;
+}
+
+.swiper-slide.four .main4 .fourBox1 {
+	width: 72%;
+	height: 65%;
+	position: absolute;
+	left: 15%;
+	top: 20%;
+}
+
+.swiper-slide.four .main4 .fourText2 {
+	color: #efefff;
+	font: 5vw/1.7 "黑体";
+	font-weight: bolder;
+	text-align: left;
+}
+
+.swiper-slide.four .main4 .fourPic4 {
+	width: 98%;
+	height: 32%;
+	border: 2px solid #fff;
+}
+
+/* 第四屏结束 */
+
+/* 第五屏开始 */
+.swiper-slide.five {
+	background-image: url(../img/1.gif);
+	background-size: 100% 100%;
+}
+
+.swiper-slide.five .main5 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide.five .main5 .fivePic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide.five .main5 .fivePic2 {
+	width: 90%;
+	height: 94%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+}
+
+.swiper-slide.five .main5 .fiveText1 {
+	color: #efefff;
+	font-size: 9vw;
+	letter-spacing: 2vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 25%;
+	top: 5%;
+}
+
+.swiper-slide.five .main5 .fivePic3 {
+	width: 90%;
+	height: 14%;
+	position: absolute;
+	left: 5%;
+	top: 12%;
+}
+
+.swiper-slide.five .fiveBox1 {
+	width: 71%;
+	height: 68%;
+	position: absolute;
+	left: 14%;
+	top: 22%;
+}
+
+.swiper-slide.five .fiveBox1 .fivePic4 {
+	width: 98%;
+	height: 35%;
+	margin: 7% -5%;
+	border: 2px solid #fff;
+}
+
+.swiper-slide.five .fiveBox1 .fiveText2 {
+	color: #efefff;
+	font-size: 6vw;
+	font-weight: bolder;
+}
+
+.swiper-slide.five .fiveBox1 .fiveText3 {
+	color: #efefff;
+	font: 5vw/1.7 "黑体";
+	font-weight: bolder;
+	margin-top: 5%;
+	text-align: left;
+}
+
+/* 第五屏结束 */
+
+/* 第六屏开始 */
+.swiper-slide.six {
+	background-image: url(../img/1.gif);
+	background-size: 100% 100%;
+}
+
+.swiper-slide.six .main6 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide.six .main6 .sixPic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide.six .main6 .sixPic2 {
+	width: 90%;
+	height: 94%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+}
+
+.swiper-slide.six .main6 .sixText1 {
+	color: #efefff;
+	font-size: 9vw;
+	letter-spacing: 2vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 25%;
+	top: 5%;
+}
+
+.swiper-slide.six .main6 .sixPic3 {
+	width: 90%;
+	height: 14%;
+	position: absolute;
+	left: 5%;
+	top: 12%;
+}
+
+.swiper-slide.six .sixBox1 {
+	width: 71%;
+	height: 68%;
+	position: absolute;
+	left: 14%;
+	top: 22%;
+}
+
+.swiper-slide.six .sixBox1 .sixPic3 {
+	width: 98%;
+	height: 35%;
+	margin: -15% -5%;
+	border: 2px solid #fff;
+}
+
+.swiper-slide.six .sixBox1 .sixText2 {
+	color: #efefff;
+	font-size: 6vw;
+	font-weight: bolder;
+	margin-top: 73%;
+}
+
+.swiper-slide.six .sixBox1 .sixText3 {
+	color: #efefff;
+	font: 5vw/1.7 "黑体";
+	font-weight: bolder;
+	margin-top: 5%;
+	text-align: left;
+}
+
+
+/* 第六屏结束 */
+
+/* 第七屏开始 */
+.swiper-slide.seven {
+	background-image: url(../img/1.gif);
+	background-size: 100% 100%;
+}
+
+.swiper-slide.seven .main7 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide.seven .main7 .sevenPic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide.seven .main7 .sevenPic2 {
+	width: 90%;
+	height: 94%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+}
+
+.swiper-slide.seven .main7 .sevenText1 {
+	color: #efefff;
+	font-size: 9vw;
+	letter-spacing: 2vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 25%;
+	top: 5%;
+}
+
+.swiper-slide.seven .main7 .sevenPic3 {
+	width: 90%;
+	height: 14%;
+	position: absolute;
+	left: 5%;
+	top: 12%;
+}
+
+.swiper-slide.seven .sevenBox1 {
+	width: 71%;
+	height: 68%;
+	position: absolute;
+	left: 14%;
+	top: 22%;
+}
+
+.swiper-slide.seven .sevenBox1 .sevenText2 {
+	width: 98%;
+	height: 10%;
+	color: #939293;
+	background: #fdfcfe;
+	text-indent: 2vw;
+	margin-top: 5%;
+	border: 1px solid #fdfcfe;
+	font-size: 5vw;
+}
+
+.swiper-slide.seven .sevenBox1 .sevenText3 {
+	height: 35%;
+}
+
+.swiper-slide.seven .sevenBox1 .sevenText6 {
+	color: #e6eaf5;
+	background: #2547b3;
+	border: 1px solid #2547b3;
+}
+
+/* 第七屏结束 */
+
+/* 第八屏开始 */
+.swiper-slide.eight {
+	background-image: url(../img/1.gif);
+	background-size: 100% 100%;
+}
+
+.swiper-slide.eight .main8 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper-slide.eight .main8 .eightPic1 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide.eight .main8 .eightPic2 {
+	width: 90%;
+	height: 94%;
+	position: absolute;
+	left: 5%;
+	top: 3%;
+}
+
+.swiper-slide.eight .main8 .eightText1 {
+	color: #efefff;
+	font-size: 9vw;
+	letter-spacing: 2vw;
+	font-weight: bolder;
+	position: absolute;
+	left: 25%;
+	top: 5%;
+}
+
+.swiper-slide.eight .main8 .eightPic3 {
+	width: 90%;
+	height: 14%;
+	position: absolute;
+	left: 5%;
+	top: 12%;
+}
+
+.swiper-slide.eight .eightBox1 {
+	width: 71%;
+	height: 68%;
+	position: absolute;
+	left: 14%;
+	top: 22%;
+}
+
+.swiper-slide.eight .eightBox1 .eightPic3 {
+	width: 99%;
+	height: 44%;
+	margin-top: -12%;
+	margin-left: -5%;
+}
+.swiper-slide.eight .eightBox1 .eightText2{
+	width: 65%;
+    height: 12%;
+    background: #fdfdfe;
+    border-radius: 10px;
+    color: #2547b3;
+    font-size: 7vw;
+    margin-left: 17%;
+    margin-top: 100%;
+    cursor: pointer;
+    line-height: 2;
+}
+.swiper-slide.eight .eightBox1 .eightText3{
+    color: #fdfdfe;
+    font-size: 5vw;
+    margin-top: 15%;
+    line-height: 2;
+	font-weight: bold;
+}
+/* 第八屏结束 */
